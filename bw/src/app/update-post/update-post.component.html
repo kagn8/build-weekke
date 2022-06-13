@@ -1,0 +1,22 @@
+<!-- <table class="table mx-3" >
+    <thead>
+        <tr class="row">
+            <th class="col-3">Title</th>
+            <th class="col-3">Body</th>
+            
+        </tr>
+    </thead>
+  
+    
+    </table> -->
+
+
+<div id="flex" *ngIf="updatePosto">
+    <form action="">
+       
+        <input class="form-control" type="text" value="{{updatePosto.id}}" name="id" disabled >
+        <input class="form-control" type="text" value="{{updatePosto.title}}" name="title" >
+        <input class="form-control" type="text" value="{{updatePosto.body}}" name="body" >
+        <button class="btn btn-warning" (click)="aggiornaPost(updatePosto, updatePosto.id)">Invia Modifiche</button>
+    </form>
+</div>

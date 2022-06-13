@@ -1,0 +1,28 @@
+<!-- <nav class="container"><a class="btn btn-primary" [routerLink]="['/new-post']">Nuovo</a>
+<a class="btn btn-primary" [routerLink]="['/update-post']">Aggiorna</a>
+</nav> -->
+
+
+
+<div id="flex">
+<table class="table mx-3" >
+<thead>
+    <tr class="row">
+        <th class="col-3">Title</th>
+        <th class="col-3">Body</th>
+        <th class="col-3">Elimina</th>
+        <th class="col-3">Modifica</th>
+        
+    </tr>
+</thead>
+<tbody *ngFor="let post of posts">
+    <tr class="row">
+    <td class="col-3">{{post.title}}</td>
+    <td class="col-3">{{post.body}}</td>
+    <td class=" col-3"><button class="btn btn-danger" (click)="cancellaPost(post.id)">Elimina</button></td>
+    <td class=" col-3"><button class="btn btn-warning" (click)="aggiornaPost(post.id)" [routerLink]="['/update-post', post.id]">Modifica</button></td>
+</tr>
+</tbody>
+
+</table></div>
+<!-- [routerLink]="['/update-post'] -->
