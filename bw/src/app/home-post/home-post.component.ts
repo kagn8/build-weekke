@@ -1,5 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 import { Iposts } from '../interface';
 import { ServicePostService } from '../service-post.service';
 
@@ -10,7 +12,7 @@ import { ServicePostService } from '../service-post.service';
 })
 export class HomePostComponent implements OnInit {
 
-  constructor(private Posts: ServicePostService) { }
+  constructor(private Posts: ServicePostService, private auth:AuthService, private route:Router) { }
   posts:Iposts[]=[]
 
   visualizzaPosts(){
@@ -29,9 +31,10 @@ export class HomePostComponent implements OnInit {
       setTimeout(()=>this.visualizzaPosts(),2000)
       // this.visualizzaPosts()
   }
-  // aggiornaPost(id:number){
-  //   this.destinazione = `http://localhost:4201/posts/${id}`
-  // }
-  // destinazione:string=""
+  slogga(){
+    this.auth.logout()
+    this.route.navigate(['/login'])
+  }
+
 }
 

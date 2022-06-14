@@ -3,5 +3,7 @@
 <input type="password" [(ngModel)]="authUser.password" name="password">
 <button (click)="entra()">entra</button>
 </form>
+<div *ngIf="accedi">Devi accedere per proseguire</div>
+<div *ngIf="!accedi">Complimenti sei abilitato alla navigazione</div>
 
 {{authUser.email}}

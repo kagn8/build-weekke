@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  { path: 'new-post', loadChildren: () => import('./new-post/new-post.module').then(m => m.NewPostModule) }, 
+  { path: 'new-post', canActivate: [AuthGuard], loadChildren: () => import('./new-post/new-post.module').then(m => m.NewPostModule) }, 
   { path: 'update-post', loadChildren: () => import('./update-post/update-post.module').then(m => m.UpdatePostModule) }, 
   { path: 'home-post', canActivate: [AuthGuard], loadChildren: () => import('./home-post/home-post.module').then(m => m.HomePostModule) }, 
   { path: 'registra', loadChildren: () => import('./registra/registra.module').then(m => m.RegistraModule) }, 

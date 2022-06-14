@@ -18,4 +18,8 @@ export class AuthService {
   isUserLoggedIn(){
     return localStorage.getItem("token") != null
   }
+  logout():boolean{
+    localStorage.removeItem("token")
+    return true
+  }
 }
