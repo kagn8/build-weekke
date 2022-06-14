@@ -20,7 +20,7 @@
     <td class="col-3">{{post.title}}</td>
     <td class="col-3">{{post.body}}</td>
     <td class=" col-3"><button class="btn btn-danger" (click)="cancellaPost(post.id)">Elimina</button></td>
-    <td class=" col-3"><button class="btn btn-warning" (click)="aggiornaPost(post.id)" [routerLink]="['/update-post', post.id]">Modifica</button></td>
+    <td class=" col-3"><button class="btn btn-warning" [routerLink]="['/update-post', post.id]">Modifica</button></td>
 </tr>
 </tbody>
 

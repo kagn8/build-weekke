@@ -25,7 +25,7 @@ export class ServicePostService {
     return this.http.post(this.ApiUrlPost, post)
   }
 
-  updatePost(post:Iposts, id:number):any{
+  updatePost(post:Partial<Iposts>, id:number):any{
     return this.http.patch(`${this.ApiUrlPost}/${id}`, post)
   }
   

@@ -1,22 +1,13 @@
-<!-- <table class="table mx-3" >
-    <thead>
-        <tr class="row">
-            <th class="col-3">Title</th>
-            <th class="col-3">Body</th>
-            
-        </tr>
-    </thead>
-  
-    
-    </table> -->
-
-
 <div id="flex" *ngIf="updatePosto">
-    <form action="">
+    <form [formGroup]="form"  #f (ngSubmit)="aggiornaPost()">
        
-        <input class="form-control" type="text" value="{{updatePosto.id}}" name="id" disabled >
-        <input class="form-control" type="text" value="{{updatePosto.title}}" name="title" >
-        <input class="form-control" type="text" value="{{updatePosto.body}}" name="body" >
-        <button class="btn btn-warning" (click)="aggiornaPost(updatePosto, updatePosto.id)">Invia Modifiche</button>
+        <input class="form-control" type="text"  value="{{updatePosto.id}}" name="id" disabled >
+        <input class="form-control" id="title" type="text" formControlName="title" value="{{updatePosto.title}}" name="title" >
+        <input class="form-control" id="body" type="text" formControlName="body" value="{{updatePosto.body}}" name="body" >
+       
+        <div *ngIf="!loading"> <button class="btn btn-warning"  type="submit" >Invia Modifiche</button></div>
+        <div *ngIf="loading"> 
+            <button class="btn btn-warning"  type="submit" disabled>Invia Modifiche</button>
+        </div>
     </form>
 </div>

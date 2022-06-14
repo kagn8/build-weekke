@@ -2,21 +2,64 @@
   "posts": [
     {
       "userId": 0,
-      "id": 9,
-      "title": "come",
-      "body": "stai"
+      "id": 2,
+      "title": "ciao",
+      "body": "jkdfskjsd"
     },
     {
       "userId": 0,
-      "id": 10,
-      "title": "comerg",
-      "body": "stai"
+      "id": 4,
+      "title": "ef",
+      "body": "efe"
     },
     {
       "userId": 0,
-      "id": 11,
-      "title": "comerg",
-      "body": "staierg"
+      "id": 7,
+      "title": "ef",
+      "body": "efe"
+    },
+    {
+      "userId": 0,
+      "id": 8,
+      "title": "ciao",
+      "body": "dfghgdfa"
+    }
+  ],
+  "users": [
+    {
+      "email": "zerodafavu@mailinator.com",
+      "password": "$2a$10$GpIVeTmVXILkAI3XPwmb6OHcEYUs3R5izalNqN8SBkkAKw3WwmzKK",
+      "nome": "",
+      "cognome": "",
+      "id": 1
+    },
+    {
+      "email": "pipehesys@mailinator.com",
+      "password": "$2a$10$v5fYg736cx7g69cbkEQURuOk5uT2MsOwO3Abp2PgBxUgRGvpJKxJq",
+      "nome": "Accusantium duis dol",
+      "cognome": "Odio enim dolorem nu",
+      "id": 2
+    },
+    {
+      "email": "cagnotto.f@gmail.com",
+      "password": "$2a$10$OA8StU1nrSrl/aMkwGNzdugq8eLFovfH9odarercVwwj63bpte3G2",
+      "nome": "Francesco",
+      "cognome": "Odio enim dolorem nu",
+      "id": 3
+    },
+    {
+      "email": "wakicefabo@mailinator.com",
+      "password": "$2a$10$Ry31hYhCQ0WyFLITU1QoLueuNYmNH67XCOeFpWgSMjxAqxbo/6oBC",
+      "nome": "Ipsam lorem magna te",
+      "cognome": "Corporis dolore volu",
+      "id": 4
+    },
+    {
+      "email": "email@email.it",
+      "password": "$2a$10$QeslPha15.QdVvNRL7lrm.CWcdD7MhyBsxbyIx101hW8XCaO2aA3u",
+      "nome": "Francesco",
+      "cognome": "cagnotto",
+      "id": 5
     }
   ]
 }

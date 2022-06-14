@@ -27,10 +27,11 @@ export class HomePostComponent implements OnInit {
     this.Posts.removePost(id).subscribe((res:Iposts) => {console.log(res);
      res})
       setTimeout(()=>this.visualizzaPosts(),2000)
+      // this.visualizzaPosts()
   }
-  aggiornaPost(id:number){
-    this.destinazione = `http://localhost:4201/posts/${id}`
-  }
-  destinazione:string=""
+  // aggiornaPost(id:number){
+  //   this.destinazione = `http://localhost:4201/posts/${id}`
+  // }
+  // destinazione:string=""
 }
 
