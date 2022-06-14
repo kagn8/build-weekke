@@ -1,27 +1,23 @@
 {
   "posts": [
     {
-      "userId": 0,
+      "id": 1,
+      "title": "comegdff",
+      "body": "dfghgdfa"
+    },
+    {
       "id": 2,
-      "title": "ciao",
-      "body": "jkdfskjsd"
+      "title": "comegdff",
+      "body": "dfghgdfa"
     },
     {
-      "userId": 0,
       "id": 4,
-      "title": "ef",
-      "body": "efe"
+      "title": "comegdff",
+      "body": "dfghgdfa"
     },
     {
-      "userId": 0,
-      "id": 7,
-      "title": "ef",
-      "body": "efe"
-    },
-    {
-      "userId": 0,
-      "id": 8,
-      "title": "ciao",
+      "id": 5,
+      "title": "comegdff",
       "body": "dfghgdfa"
     }
   ],

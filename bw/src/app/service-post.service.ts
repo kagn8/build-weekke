@@ -30,7 +30,11 @@ export class ServicePostService {
   }
   
   removePost(id:number):any{
+    console.log(`${this.ApiUrlPost}/${id}`);
+    console.log(id);
+    
     return this.http.delete(`${this.ApiUrlPost}/${id}`)
+    
   }
   
 }

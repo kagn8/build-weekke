@@ -24,13 +24,13 @@ export class HomePostComponent implements OnInit {
     this.visualizzaPosts()
   }
   cancellaPost(id:number){
-    // console.log(id);
+     console.log(id);
     
-    this.Posts.removePost(id).subscribe((res:Iposts) => {console.log(res);
-     res})
-      setTimeout(()=>this.visualizzaPosts(),2000)
+     this.Posts.removePost(id).subscribe((res:Iposts) => {console.log(res);this.visualizzaPosts()})
+    //  setTimeout(()=>this.visualizzaPosts(),2000)
       // this.visualizzaPosts()
   }
+  
   slogga(){
     this.auth.logout()
     this.route.navigate(['/login'])

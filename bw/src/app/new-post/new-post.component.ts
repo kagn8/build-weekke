@@ -21,7 +21,7 @@ export class NewPostComponent implements OnInit {
   newPosts:Iposts[]= []
 
   creaNuovo(){
-    let nuovo = new ClassePrincipale(0,0, this.title, this.body)
+    let nuovo = new ClassePrincipale(0, this.title, this.body)
     this.newPosts.push(nuovo)
     console.log(this.newPosts);
     this.newPost.createNewPost(nuovo).subscribe((res: any)=>{console.log(res)})
