@@ -23,9 +23,9 @@ export class AuthService {
     localStorage.removeItem("token")
     return true
   }
-  // loginSub = new BehaviorSubject(null);
+  private loginSub = new BehaviorSubject<null|boolean>(null);
 
-  // loginObs = this.loginSub
+  loginObs = this.loginSub.asObservable();
 
   // verificaLogin(user:Partial<IUser>){
   //   return this.http.post(this.ApiUrlUser, user).pipe(tap(res=>{this.loginSub.next(res)}))

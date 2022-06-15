@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 13,
-      "title": "ciao",
+      "title": "Post 1",
       "body": "hey"
     },
     {
@@ -49,6 +49,13 @@
       "nome": "Francesco",
       "cognome": "cagnotto",
       "id": 5
+    },
+    {
+      "email": "xxx@xxx.xx",
+      "password": "$2a$10$rYLriD6CFdpjrYjzrZBbPOl243UY.lunsmsdleUuQadi5wI75C7aG",
+      "nome": "Francesco",
+      "cognome": "Cagnotto",
+      "id": 6
     }
   ]
 }
