@@ -17,7 +17,7 @@
 <input class="form-control my-5" type="text" placeholder="body" name="body" [(ngModel)]="body"  > -->
 <input type="text" class="form-control my-5" formControlName="title">
 <input type="text" class="form-control my-5" formControlName="body">
-<button [disabled]="carico" class="btn btn-success bg" type="submit" ><span *ngIf="!carico"><span class="title-word title-word-1">Crea </span>
+<button [disabled]="carico||form.invalid" class="btn btn-success bg" type="submit" ><span *ngIf="!carico"><span class="title-word title-word-1">Crea </span>
   <span class="title-word title-word-2">un </span>
   <span class="title-word title-word-3">nuovo </span>
   <span class="title-word title-word-4">post!</span></span>
@@ -25,4 +25,4 @@
 </div>
 </form>
   </div>
-</div>||form.invalid
+</div>

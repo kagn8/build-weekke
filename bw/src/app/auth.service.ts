@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, tap } from 'rxjs';
 import { IUser } from './user';
 
 @Injectable({
@@ -22,4 +23,11 @@ export class AuthService {
     localStorage.removeItem("token")
     return true
   }
+  // loginSub = new BehaviorSubject(null);
+
+  // loginObs = this.loginSub
+
+  // verificaLogin(user:Partial<IUser>){
+  //   return this.http.post(this.ApiUrlUser, user).pipe(tap(res=>{this.loginSub.next(res)}))
+  // }
 }

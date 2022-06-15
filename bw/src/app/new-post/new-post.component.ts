@@ -16,7 +16,7 @@ export class NewPostComponent implements OnInit {
   constructor(private newPost: ServicePostService, private forms:FormBuilder) { }
   ngOnInit(): void {
     this.form = this.forms.group({
-      title:[null, [Validators.required, Validators.minLength(10)]],
+      title:[null, [Validators.required]],
       body:[null, [Validators.required]]
     })
   }
@@ -28,6 +28,7 @@ export class NewPostComponent implements OnInit {
   newPosts:Iposts[]= []
   carico:boolean= false;
   creaNuovo(){
+
     console.log(this.form.valid);
     
     let nuovo = new ClassePrincipale(0, this.title, this.body)
