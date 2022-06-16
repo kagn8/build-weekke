@@ -21,24 +21,22 @@ export class NewPostComponent implements OnInit {
     })
   }
 
-  title!:string;
-  body!:string;
+  
   form!:FormGroup;
  
   newPosts:Iposts[]= []
   carico:boolean= false;
+  
   creaNuovo(){
 
-    console.log(this.form.valid);
+    console.log(this.form);
     
-    let nuovo = new ClassePrincipale(0, this.title, this.body)
+    let nuovo = new ClassePrincipale(0, this.form.value.title, this.form.value.body)
     this.newPosts.push(nuovo)
     console.log(this.newPosts);
     this.carico=true
     this.newPost.createNewPost(nuovo).subscribe((res: any)=>{console.log(res); this.carico=false; Swal.fire('Utente creato corretamente') })
     
   }
-  
-  
-  
+
 }

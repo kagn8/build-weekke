@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   constructor( private authServ: AuthService, private router:Router) { }
 
-  authUser:Partial<IUser> = {
+  authUser:any = {
     email: '',
     password: ''
   }

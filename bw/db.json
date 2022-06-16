@@ -11,7 +11,23 @@
       "body": "ciao"
     },
     {
-      "id": 15
+      "id": 15,
+      "title": "ciao",
+      "body": "hey"
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 20,
+      "title": "dddd",
+      "body": "dddd"
     }
   ],
   "users": [
@@ -56,6 +72,13 @@
       "nome": "Francesco",
       "cognome": "Cagnotto",
       "id": 6
+    },
+    {
+      "email": "ggg@ggg.gg",
+      "password": "$2a$10$7VbXrXLMN9L5I/N3lrC7iewmrjBzY6hRvCnFos37WfU0sgB3grYBa",
+      "nome": "Francesco",
+      "cognome": "Cagnotto",
+      "id": 7
     }
   ]
 }
