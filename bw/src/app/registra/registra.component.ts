@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { RegisterService } from '../register.service';
 import { IUser } from '../user';
@@ -10,7 +11,7 @@ import { IUser } from '../user';
 })
 export class RegistraComponent implements OnInit {
 
-  constructor(private regServ:RegisterService) { }
+  constructor(private regServ:RegisterService, private routes:Router) { }
   authUser:IUser = {
     email: '',
     nome: '',
@@ -31,8 +32,14 @@ export class RegistraComponent implements OnInit {
       cancelButtonText: 'لا',
       showCancelButton: true,
       showCloseButton: true
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.abc()
+      }
     })
   }
-
-
+  abc(){
+    this.routes.navigate(['/login'])
+  }
+  
 }

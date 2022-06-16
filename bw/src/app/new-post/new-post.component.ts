@@ -32,11 +32,16 @@ export class NewPostComponent implements OnInit {
     console.log(this.form);
     
     let nuovo = new ClassePrincipale(0, this.form.value.title, this.form.value.body)
+    
     this.newPosts.push(nuovo)
     console.log(this.newPosts);
     this.carico=true
-    this.newPost.createNewPost(nuovo).subscribe((res: any)=>{console.log(res); this.carico=false; Swal.fire('Utente creato corretamente') })
-    
+    this.newPost.createNewPost(nuovo).subscribe((res: any)=>{console.log(res); this.carico=false; Swal.fire('Utente creato corretamente');  })
+    this.form = this.forms.group({
+      title:[null, [Validators.required]],
+      body:[null, [Validators.required]]
+    })
+  }
   }
 
-}
+
