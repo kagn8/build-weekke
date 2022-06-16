@@ -41,11 +41,6 @@
       "body": "dddds"
     },
     {
-      "id": 25,
-      "title": "",
-      "body": ""
-    },
-    {
       "id": 26,
       "title": "vxcz",
       "body": "vbzxvb"
@@ -54,11 +49,6 @@
       "id": 27,
       "title": "sss",
       "body": "ss"
-    },
-    {
-      "id": 28,
-      "title": "",
-      "body": ""
     },
     {
       "id": 29,
@@ -122,6 +112,20 @@
       "nome": "Francesco",
       "cognome": "Cagnotto",
       "id": 8
+    },
+    {
+      "email": "ca.f@gmail.com",
+      "password": "$2a$10$d4KgWDUNBfen2kZ65b9KU.lGGbB8U1vgyC8WIZ/RrgsELBbfjObs.",
+      "nome": "Francesco",
+      "cognome": "Cagnotto",
+      "id": 9
+    },
+    {
+      "email": "cagnoto.f@gmail.com",
+      "password": "$2a$10$8dEW3NCyzBKDcOb8Sn66euvHbg1QWxnksj1yKXjgw7sSEHm8R1rKy",
+      "nome": "Francesco",
+      "cognome": "Cagnotto",
+      "id": 10
     }
   ]
 }

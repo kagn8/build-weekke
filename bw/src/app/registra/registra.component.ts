@@ -35,6 +35,13 @@ export class RegistraComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         this.abc()
+        
+      }
+      this.authUser = {
+        email: '',
+        nome: '',
+        password: '',
+        cognome: ''
       }
     })
   }
