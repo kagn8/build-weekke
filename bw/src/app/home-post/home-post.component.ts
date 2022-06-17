@@ -17,7 +17,7 @@ export class HomePostComponent implements OnInit {
   posts:Iposts[]=[]
 
   visualizzaPosts(){
-    this.Posts.getPosts().subscribe(res => {this.posts=res})
+    this.Posts.getPosts().subscribe(res => {this.posts=res.reverse()})
     // setTimeout(this.Posts.getPosts().subscribe(res => {this.posts=res}),2000)
   }
 

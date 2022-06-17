@@ -20,6 +20,8 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
     this.navAuth.loginObs.subscribe((res)=>{
       this.user = res;
+      console.log();
+      
     })
   }
 

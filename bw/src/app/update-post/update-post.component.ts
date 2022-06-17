@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { async } from '@angular/core/testing';
 import { FormBuilder, FormGroup, Validators, FormControl, FormArray, NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 import { ClassePrincipale } from '../classe-principale';
 import { Iposts } from '../interface';
 import { ServicePostService } from '../service-post.service';
@@ -19,6 +20,8 @@ export class UpdatePostComponent implements OnInit {
   idUpdate!:number;
 
   visualizzaPosts(id:number){
+    console.log(id);
+    
     this.idUpdate = id
     this.updatePost.getPost(this.idUpdate).subscribe(res=> console.log(res))
   }
@@ -26,6 +29,8 @@ export class UpdatePostComponent implements OnInit {
   form!:FormGroup;
 
   ngOnInit(): void {
+    console.log(this.form);
+    
     this.aR.params.subscribe(
       async (parametri)=>{
         const id = +parametri["id"]
@@ -53,6 +58,13 @@ export class UpdatePostComponent implements OnInit {
     this.loading=true
     this.updatePost.updatePost(this.form.value, this.updatePosto!.id).subscribe((res:Iposts)=>{this.loading=false;
     
+    })
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'bravo ragazzo le tue modifiche sono andate a buon fine',
+      showConfirmButton: false,
+      timer: 1500
     })
   }
   
